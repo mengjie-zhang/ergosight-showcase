@@ -111,6 +111,8 @@
   .rw.wide .rw-body { display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; }
   .rw.wide .rw-body .rw-head { grid-column: 1 / -1; }
   .rw.wide .rw-body p.rw-why { margin-top: 0; align-self: start; }
+  .rw.wide .rw-pair { aspect-ratio: auto; height: 400px; }
+  .rw.wide .rw-pair img { height: 400px; }
   .gaze { background: #0f2533; color: #e3eef3; }
   .gaze h2, .gaze h3 { color: #fff; } .gaze .eyebrow { color: #8fd3e2; } .gaze p.lead { color: #c3d8e0; }
   .gaze-videos { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 40px; }
@@ -155,6 +157,7 @@
   @media (max-width: 980px) {
     .hero-grid, .row, .evidence, .gaze-videos, .demos, .rw-grid { grid-template-columns: 1fr; gap: 32px; }
     .rw.wide .rw-body { display: block; } .rw.wide .rw-body p.rw-why { margin-top: 12px; }
+    .rw.wide .rw-pair, .rw.wide .rw-pair img { height: 240px; }
     .row.flip .row-media { order: 0; }
     .steps { grid-template-columns: 1fr 1fr; gap: 28px 18px; }
     .sectors { grid-template-columns: repeat(3, 1fr); }
@@ -356,25 +359,15 @@
     <h2>Messy sites, moving cameras, whole crews. No problem.</h2>
     <p class="lead">Real workplaces are not laboratories. Views are blocked, people move around, cameras are handheld and work happens at height. ErgoSight is designed for these conditions. Each clip below shows the original footage next to ErgoSight's 3D reconstruction.</p>
     <div class="rw-grid">
-      <article class="rw">
+      <article class="rw wide">
         <div class="rw-media"><video src="media/rw-handheld.mp4" poster="media/rw-handheld.jpg" autoplay muted loop playsinline controls preload="metadata"></video></div>
         <div class="rw-body">
+          <div class="rw-head">
           <span class="rw-kicker">No tripod needed</span>
-          <h3>Just walk and film</h3>
-          <p>This clip was recorded on a phone held in the hand, walking around the worker. The camera moves and shakes, yet the 3D body stays stable and every frame is scored.</p>
+          <h3>Handheld footage, straight from the camera</h3>
+          </div>
+          <p>Filmed by hand on site: the camera shakes, the worker crouches behind a rebar cage and the head is partly out of frame. ErgoSight still rebuilds the full crouching posture in 3D, follows it smoothly and scores every frame.</p>
           <p class="rw-why"><b>Why it matters:</b> any supervisor's phone becomes an assessment tool. No equipment to set up, no fixed camera positions, and any task at any location can be captured in seconds. That is what makes risk screening scalable across many sites.</p>
-        </div>
-      </article>
-      <article class="rw">
-        <div class="rw-media rw-pair">
-          <img src="media/rw-height-2d.jpg" alt="Workers on a roof edge and a scaffold photographed from the ground">
-          <img src="media/rw-height-3d.jpg" alt="The same workers reconstructed in 3D">
-        </div>
-        <div class="rw-body">
-          <span class="rw-kicker">Height and distance</span>
-          <h3>Workers at height, seen from the ground</h3>
-          <p>A crane lift on a building under construction, photographed from street level. Workers on the roof edge and the scaffold are small and far away, yet each one is detected and reconstructed in 3D.</p>
-          <p class="rw-why"><b>Why it matters:</b> work at height is where getting close with equipment is hardest and where posture matters most. ErgoSight can assess it from a safe distance.</p>
         </div>
       </article>
       <article class="rw wide">
@@ -395,8 +388,22 @@
           <span class="rw-kicker">Many people at once</span>
           <h3>Whole crews in busy surroundings</h3>
           </div>
-          <p>A crew clearing a drain on a busy street, with passers-by and motorbikes crossing right in front of the camera. Every worker is followed individually and analysed at the same time, even when briefly hidden.</p>
+          <p>A crew clearing a drain on a busy street, with people in the background and a passer-by walking right in front of the camera. Every worker is followed individually and analysed at the same time, even when briefly hidden.</p>
           <p class="rw-why"><b>Why it matters:</b> one video covers a whole team instead of one person at a time. Each worker gets an individual risk profile, so supervisors can see who is most exposed.</p>
+        </div>
+      </article>
+      <article class="rw wide">
+        <div class="rw-media rw-pair">
+          <img src="media/rw-height-2d.jpg" alt="Workers on a roof edge and a scaffold photographed from the ground">
+          <img src="media/rw-height-3d.jpg" alt="The same workers reconstructed in 3D">
+        </div>
+        <div class="rw-body">
+          <div class="rw-head">
+          <span class="rw-kicker">Height and distance</span>
+          <h3>Workers at height, seen from the ground</h3>
+          </div>
+          <p>A crane lift on a building under construction, photographed from street level. Workers on the roof edge and the scaffold are small and far away, yet each one is detected and reconstructed in 3D.</p>
+          <p class="rw-why"><b>Why it matters:</b> work at height is where getting close with equipment is hardest and where posture matters most. ErgoSight can assess it from a safe distance.</p>
         </div>
       </article>
     </div>
