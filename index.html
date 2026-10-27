@@ -115,7 +115,7 @@
   .rw.wide .rw-pair img { height: 400px; }
   .gaze { background: #0f2533; color: #e3eef3; }
   .gaze h2, .gaze h3 { color: #fff; } .gaze .eyebrow { color: #8fd3e2; } .gaze p.lead { color: #c3d8e0; }
-  .gaze-videos { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 40px; }
+  .gaze-videos { display: grid; grid-template-columns: minmax(0, 760px); justify-content: center; gap: 22px; margin-top: 40px; }
   .gaze-videos figure { margin: 0; background: #0b1b25; border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(255,255,255,.08); }
   .gaze-videos video { width: 100%; aspect-ratio: 640 / 368; object-fit: cover; background: #000; }
   .gaze-videos figcaption { padding: 14px 18px 18px; font-size: 15px; color: #c3d8e0; }
@@ -218,7 +218,7 @@
   <div class="wrap">
     <p class="eyebrow">The challenge</p>
     <h2>Musculoskeletal injuries are costly, common and largely preventable.</h2>
-    <p class="lead">Work-related musculoskeletal disorders build up quietly through repeated awkward postures, heavy handling and long static holds. In European industry they account for more than half of all work absences. Yet the way risk is assessed has barely changed.</p>
+    <p class="lead">Work-related musculoskeletal disorders build up quietly through repeated awkward postures, heavy handling and long static holds. In New Zealand they make up more than 30% of work-related health harm and 45% of injuries that keep a worker off work for a week or more (WorkSafe New Zealand). Yet the way risk is assessed has barely changed.</p>
     <div class="stats">
       <div class="stat"><strong>Slow</strong><p>Observational assessments take an expert hours per task, so only a small sample of work ever gets checked.</p></div>
       <div class="stat"><strong>Subjective</strong><p>Different assessors score the same task differently, and a single snapshot can miss the moments that matter most.</p></div>
@@ -416,10 +416,6 @@
     <h2>Know where your team is looking.</h2>
     <p class="lead">Safe, productive work depends on attention as much as on posture. From ordinary video, ErgoSight estimates each worker's line of sight and what they are looking at, without eye-tracking glasses or extra hardware. Teams can see shared focus, attention shifts and who is looking where.</p>
     <div class="gaze-videos">
-      <figure>
-        <video src="media/gaze-teamwork-1.mp4" poster="media/gaze-teamwork-1.jpg" autoplay muted loop playsinline controls></video>
-        <figcaption><b>Shared focus.</b> A site team reviewing drawings. Gaze lines converge on the same point on the plan, showing the team is attending to the same detail.</figcaption>
-      </figure>
       <figure>
         <video src="media/gaze-teamwork-2.mp4" poster="media/gaze-teamwork-2.jpg" autoplay muted loop playsinline controls></video>
         <figcaption><b>Attention shifts.</b> A coordination meeting at a workstation. Gaze moves between the drawings, the screen and colleagues, revealing who leads, who follows and when focus splits.</figcaption>

@@ -9,4 +9,4 @@ This repository holds only the showcase page (`index.html` and `media/`). It has
 the repository and open `index.html` directly.
 
 Footage: the demo clips are screen recordings of the ErgoSight app; the site footage comes from free stock libraries
-(Pexels / Pixabay). `media/gaze-teamwork-1.mp4` is an iStock preview clip.
+(Pexels / Pixabay).
